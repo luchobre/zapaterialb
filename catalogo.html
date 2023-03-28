@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zapateria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="navOffer">
+          <div class="offerSocialMedia">
+            <a href="http://www.facebook.com">
+              <iconify-icon
+                icon="typcn:social-facebook"
+                style="color: white"
+                width="20"
+              ></iconify-icon>
+            </a>
+            <a href="http://www.instagram.com">
+              <iconify-icon
+                icon="bxl:instagram"
+                style="color: white"
+                width="20"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="offerText">
+            <p id="offer"></p>
+          </div>
+          <div class="offerOptions">
+            <iconify-icon
+              class="options-icons"
+              icon="ph:magnifying-glass"
+              style="color: white"
+              width="20"
+            ></iconify-icon>
+            <iconify-icon
+              class="options-icons"
+              icon="material-symbols:person"
+              style="color: white"
+              width="20"
+            ></iconify-icon>
+            <p class="options-icons">MI CARRITO</p>
+            <iconify-icon
+              class="options-icons"
+              icon="ph:bag"
+              style="color: white"
+              width="20"
+            ></iconify-icon>
+          </div>
+        </div>
+        <a href="index.html"
+          ><img class="nav-logo" src="./images/logo.png" alt="logoFB"
+        /></a>
+        <div class="nav-links-container">
+          <div>
+            <h4 id="womenIcon1">MUJER</h4>
+            <iconify-icon
+              id="womenIcon"
+              icon="material-symbols:keyboard-arrow-down-rounded"
+              style="color: black"
+              width="18"
+            ></iconify-icon>
+            <ul id="women">
+              <li><a href="./catalogo.html">Zapatillas</a></li>
+              <li><a href="./catalogo.html">Botas</a></li>
+              <li><a href="./catalogo.html">Borcegos</a></li>
+              <li><a href="./catalogo.html">Zapatos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 id="menIcon1">HOMBRE</h4>
+            <iconify-icon
+              id="menIcon"
+              icon="material-symbols:keyboard-arrow-down-rounded"
+              style="color: black"
+              width="18"
+            ></iconify-icon>
+            <ul id="men" class="men2">
+              <li><a href="./catalogo.html">Zapatillas</a></li>
+              <li><a href="./catalogo.html">Botas</a></li>
+              <li><a href="./catalogo.html">Botines</a></li>
+              <li><a href="./catalogo.html">Zapatos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 id="kidsIcon1">NIÑOS</h4>
+            <iconify-icon
+              id="kidsIcon"
+              icon="material-symbols:keyboard-arrow-down-rounded"
+              style="color: black"
+              width="18"
+            ></iconify-icon>
+            <ul id="kids">
+              <li><a href="./catalogo.html">Zapatillas</a></li>
+              <li><a href="./catalogo.html">Botas</a></li>
+              <li><a href="./catalogo.html">Botines</a></li>
+              <li><a href="./catalogo.html">Zapatos</a></li>
+            </ul>
+          </div>
+          <a href="#">TABLA DE TALLES</a>
+          <span class="burgerButton">
+            <iconify-icon
+              id="burgerOpen"
+              icon="icon-park:hamburger-button"
+              style="color: black"
+              width="30"
+            ></iconify-icon>
+            <iconify-icon
+              id="burgerClose"
+              icon="akar-icons:cross"
+              style="color: black"
+              width="24"
+            ></iconify-icon>
+          </span>
+        </div>
+      </nav>
+      <div class="burgerMenu" id="burgerMenu">
+        <a href="./index.html">
+          <iconify-icon
+            icon="material-symbols:home"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>HOME</h5>
+        </a>
+        <a href="./catalogo.html">
+          <iconify-icon
+            icon="emojione-monotone:bust-in-silhouette"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>HOMBRES</h5>
+        </a>
+        <a href="./catalogo.html">
+          <iconify-icon
+            icon="icon-park-solid:women"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>MUJERES</h5>
+        </a>
+        <a href="./catalogo.html">
+          <iconify-icon
+            icon="mdi:kids-room"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>NIÑOS</h5>
+        </a>
+        <a href="#">
+          <iconify-icon
+            icon="mdi:ruler"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>TABLA DE TALLES</h5>
+        </a>
+        <a href="#newsletter">
+          <iconify-icon
+            icon="material-symbols:mail-rounded"
+            style="color: black"
+            width="26"
+          ></iconify-icon>
+          <h5>CONTACTO</h5>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="catalog-container">
+        <div>
+          <img
+            id="img1"
+            src="./images/borcegos/1.webp"
+            alt=""
+            onmouseover="changeImg1()"
+            onmouseout="restoreImg1()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img2"
+            src="./images/borcegos/2.webp"
+            alt=""
+            onmouseover="changeImg2()"
+            onmouseout="restoreImg2()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img3"
+            src="./images/borcegos/3.webp"
+            alt=""
+            onmouseover="changeImg3()"
+            onmouseout="restoreImg3()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img4"
+            src="./images/borcegos/4.webp"
+            alt=""
+            onmouseover="changeImg4()"
+            onmouseout="restoreImg4()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img5"
+            src="./images/borcegos/5.webp"
+            alt=""
+            onmouseover="changeImg5()"
+            onmouseout="restoreImg5()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img6"
+            src="./images/borcegos/6.webp"
+            alt=""
+            onmouseover="changeImg6()"
+            onmouseout="restoreImg6()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img7"
+            src="./images/borcegos/7.webp"
+            alt=""
+            onmouseover="changeImg7()"
+            onmouseout="restoreImg7()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img8"
+            src="./images/borcegos/8.webp"
+            alt=""
+            onmouseover="changeImg8()"
+            onmouseout="restoreImg8()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img9"
+            src="./images/borcegos/9.webp"
+            alt=""
+            onmouseover="changeImg9()"
+            onmouseout="restoreImg9()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img10"
+            src="./images/borcegos/10.webp"
+            alt=""
+            onmouseover="changeImg10()"
+            onmouseout="restoreImg10()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img11"
+            src="./images/borcegos/11.webp"
+            alt=""
+            onmouseover="changeImg11()"
+            onmouseout="restoreImg11()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img12"
+            src="./images/borcegos/12.webp"
+            alt=""
+            onmouseover="changeImg12()"
+            onmouseout="restoreImg12()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img13"
+            src="./images/borcegos/13.webp"
+            alt=""
+            onmouseover="changeImg13()"
+            onmouseout="restoreImg13()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img14"
+            src="./images/borcegos/14.webp"
+            alt=""
+            onmouseover="changeImg14()"
+            onmouseout="restoreImg14()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img15"
+            src="./images/borcegos/15.webp"
+            alt=""
+            onmouseover="changeImg15()"
+            onmouseout="restoreImg15()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+        <div>
+          <img
+            id="img16"
+            src="./images/borcegos/16.webp"
+            alt=""
+            onmouseover="changeImg16()"
+            onmouseout="restoreImg16()"
+          />
+          <p>BORCEGO ARCE</p>
+          <p>$45.000</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-up">
+          <div class="upOne">
+            <a href="./catalogo.html">MUJER</a>
+            <a href="./catalogo.html">HOMBRE</a>
+            <a href="./catalogo.html">NIÑOS</a>
+            <a href="#">TABLA DE TALLES</a>
+          </div>
+          <div class="upTwo">
+            <a href="#">Locales</a>
+            <a href="#">Contacto</a>
+            <a href="#">Guia de compras</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Politica de reembolso</a>
+          </div>
+          <div class="upThree">
+            <h3>Sumate a nuestro Newsletter!</h3>
+            <p>Descubrí las novedades y promociones</p>
+            <div class="threeNewsletter">
+              <label for="newsletter"></label>
+              <input
+                id="newsletter"
+                type="text"
+                placeholder="Correo electrónico"
+              />
+              <button>Unirse</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down">
+          <div class="footerSocialMedia">
+            <iconify-icon
+              icon="typcn:social-facebook"
+              style="color: white"
+              width="20"
+            ></iconify-icon>
+            <iconify-icon
+              icon="bxl:instagram"
+              style="color: white"
+              width="20"
+            ></iconify-icon>
+            <p>Derechos De Autor © 2023 ZAPATERIA LB.</p>
+            <p>Desarrollado por Luciano Bregoli</p>
+          </div>
+          <div>
+            <img class="footer-logo" src="./images/footer.png" alt="logoFB" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
