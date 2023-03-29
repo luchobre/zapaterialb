@@ -241,7 +241,9 @@ ul {
 #newsletter {
   height: 30px;
 }
-
+.webPage {
+  color: #455f70;
+}
 /* ********************************* ESTILOS DEL CATALOGO**************************** */
 .catalog-container {
   display: flex;
