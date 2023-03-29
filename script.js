@@ -82,9 +82,16 @@ function changePic() {
 setInterval(changePic, 4000);
 
 //////////////////////////////// BURGER MENU//////////////////////////////
-  burgerOpen.addEventListener("click", function() {
+burgerOpen.addEventListener("click", function() {
     burgerMenu.classList.toggle("show");
-  });
+    burgerClose.style.display = "flex";
+    burgerOpen.style.display = "none";
+});
+burgerClose.addEventListener("click", function() {
+    burgerMenu.classList.toggle("show");
+    burgerClose.style.display = "none";
+    burgerOpen.style.display = "flex";
+});
 //////////////////////////////// CATALOGO//////////////////////////////
 
 function changeImg1() {
