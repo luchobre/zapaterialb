@@ -10,6 +10,10 @@ var kidsList = document.getElementById("kids");
 var offer = document.getElementById("offer");
 var banner = document.getElementById("banner");
 
+var burgerOpen = document.getElementById("burgerOpen");
+// var burgerClose = document.getElementById("burgerClose");
+var burgerMenu = document.getElementById("burgerMenu");
+
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var img3 = document.getElementById("img3");
@@ -78,16 +82,9 @@ function changePic() {
 setInterval(changePic, 4000);
 
 //////////////////////////////// BURGER MENU//////////////////////////////
-window.addEventListener("load", function() {
-  const burgerOpen = document.getElementById("burgerOpen");
-  const burgerClose = document.getElementById("burgerClose");
-  const burgerMenu = document.getElementById("burgerMenu");
-
   burgerOpen.addEventListener("click", function() {
     burgerMenu.classList.toggle("show");
   });
-});
-
 //////////////////////////////// CATALOGO//////////////////////////////
 
 function changeImg1() {
