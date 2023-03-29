@@ -275,11 +275,11 @@ ul {
 #burgerClose {
   display: none;
 }
-.burgerMenu {
+#burgerMenu {
   display: none;
 }
 #burgerMenu.show {
-  display: none;
+  display: flex;
 }
 /* ****************************************MEDIA QUERIES****************************  */
 @media (max-width: 1240px) {
